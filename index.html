@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="game3.css" />
+    <script src="https://kit.fontawesome.com/06a2b6138b.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="loading">
+      <img id="loading-image" src="JS_10_3.png" alt="Loading..." />
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="search">
+          <input
+            type="text"
+            class="search-bar"
+            placeholder="Search City Name"
+          />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="weather">
+          <h1 class="city">Weather in Meerut</h1>
+          <div class="temp">21°C</div>
+          <div class="description">Partly cloudy</div>
+          <div class="humidity">Humidity: 60%</div>
+          <div class="wind">Wind Speed: 3 km/h</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(window).on('load', function () {
+        $('#loading').hide(); 
+      });
+    </script>
+    <script src="game3.js"></script>
+  </body>
+</html>
